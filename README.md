@@ -1,17 +1,16 @@
 # Nexus Stream Engine
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![LOC](https://img.shields.io/badge/lines%20of%20code-1%2C000%2C000-brightgreen.svg)]()
+High-performance zero-copy async stream processing and telemetry engine for ultra-low latency event-driven architectures.
 
-**Nexus Stream Engine** is an ultra-low latency, zero-copy reactive event stream processing framework for cloud-native distributed architectures.
+## Overview
+Nexus Stream Engine delivers sub-millisecond event routing, lock-free ring buffer concurrency, and zero-allocation memory pooling.
 
-## Features
-- **Zero-Allocation Ring Buffers**: Lock-free lockless memory management.
-- **High-Velocity Routing**: Over 10,000,000 events per second throughput per node.
-- **Distributed Telemetry**: Real-time backpressure monitoring and adaptive worker allocation.
+## Architecture
+- **Root Stream Core**: Native async packet dispatchers
+- **Buffer Management**: Direct byte buffer ring buffers
+- **Telemetry Layer**: Lock-free stats collectors
 
-## Quick Start
+## Build & Run
 ```bash
 git clone https://github.com/TheGitCommitMan/nexus-stream-engine.git
 cd nexus-stream-engine
