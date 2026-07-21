@@ -2,15 +2,12 @@
 
 High-performance zero-copy async stream processing and telemetry engine for ultra-low latency event-driven architectures.
 
-## Overview
-Nexus Stream Engine delivers sub-millisecond event routing, lock-free ring buffer concurrency, and zero-allocation memory pooling.
+## Architecture & Features
+- **Root Stream Core**: Low-latency event dispatchers placed directly in main module.
+- **Lock-Free Concurrency**: Ring buffer ring allocator with direct memory off-heap queues.
+- **OpenTelemetry Telemetry**: Low-overhead metric histogram collectors.
 
-## Architecture
-- **Root Stream Core**: Native async packet dispatchers
-- **Buffer Management**: Direct byte buffer ring buffers
-- **Telemetry Layer**: Lock-free stats collectors
-
-## Build & Run
+## Quick Start
 ```bash
 git clone https://github.com/TheGitCommitMan/nexus-stream-engine.git
 cd nexus-stream-engine
